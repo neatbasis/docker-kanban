@@ -1,6 +1,6 @@
 # docker-kanban
 
-Dockerized task organization á la Kanban based upon kanboard.net
+    Dockerized task organization á la Kanban based upon [kanboard.net](http://kanboard.net)
 
 # Quickstart
 
@@ -84,7 +84,7 @@ Within the assets volume mapping you can cutomize styling, fonts and pics of the
 
 By default the container uses an embedded SQLite database. You may want to use a PostgreSQL database instead.
 
-### Database initialization
+#### Database initialization
 
 Run a database instance first
 
@@ -95,7 +95,7 @@ Run a database instance first
                  -e PASS="secret"\
                  paintedfox/postgresql
 
-### Provide database to docker-kanban
+#### Provide database to docker-kanban
 
     docker run -d --name srv-kanban \
         -v /host/persistence/kanban/data:/var/www/html/data \
