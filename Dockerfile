@@ -42,6 +42,9 @@ RUN chmod a+x /var/www/html/db.sh \
     && sh ./db.sh \
     && rm -f ./db.sh
 
+# default client assets
+ADD ./assets/* /var/www/html/assets/
+
 # provision
 EXPOSE 80
 VOLUME ["/var/www/html/data","/var/www/html/assets"]

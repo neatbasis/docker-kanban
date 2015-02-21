@@ -1,10 +1,10 @@
 # docker-kanban
 
-    Dockerized task organization á la Kanban based upon [kanboard.net](http://kanboard.net)
+Dockerized task organization á la Kanban based upon [kanboard.net](http://kanboard.net)
 
 # Quickstart
 
-docker run -d -p 80:80 mkodockx/docker-kanban
+    docker run -d -p 80:80 mkodockx/docker-kanban
 
 # About
 
@@ -69,6 +69,10 @@ A kanboard.net related FAQ can be found at [kanboard.net/faq](http://kanboard.ne
         -v /host/persistence/kanban/data:/var/www/html/data \
         -v /host/persistence/kanban/assets:/var/www/html/assets \
         -p 80:80 mkodockx/docker-kanban
+
+### Info
+
+By default the standard client design is used. You may want to change parts or more if you have a volume mounted to '/var/www/html/assets'.
 
 ## Volumes
 
