@@ -2,7 +2,6 @@
 
 # this script will setup custom database configuration
 # will be skipped by default
-# TODO may be extended to use MySQL db as well
 
 if [ "${DATABASE_DRIVER}" = "postgres" ]; then
 

@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER https://m-ko-x.de Markus Kosmal <code@m-ko-x.de>
+MAINTAINER Markus Kosmal <mko@bebrand.de>
 
 # settings:apache
 ENV APACHE_RUN_USER www-data
